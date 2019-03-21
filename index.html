@@ -6,7 +6,20 @@
 
 </head>
 <body>
-   <input type="button" value="Tıkla Bana" onclick="document.write('HACKLENDİN!!!!!')"/>
+
+   <script>
+   function show_image(src,width,height,alt){
+       var img = document.createElement("img");
+       img.src=src;
+       img.width=width;
+       img.height=height;
+       img.alt=alt;
+       document.body.appendChild(img);
+
+
+   }
+   </script>
+   <input type="button" value="Tıkla Bana" onclick="document.write('HACKLENDİN!!!!!')+show_image('https://112291-319675-1-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/06/website-hacked.png',800,430,'You are Hacked');"/>
 
 
 
