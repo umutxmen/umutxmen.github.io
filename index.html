@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script src='Scripts/jquery.openSound.js'></script>
+
 <head>
+    <title>Hacklendin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             body{background-color: rgb(119, 197, 191)}
@@ -19,7 +23,8 @@
     <div id="div1">
    <script>
    function show_image(src,width,height,alt){
-       var img = document.createElement("img");
+      
+    var img = document.createElement("img");
        img.src=src;
        img.width=width;
        img.height=height;
@@ -28,11 +33,17 @@
 
 
    }
+   function ses_cal(src){
+           var audio =document.getElementById(src);
+             audio.play();
+
+
+   }
  
   </script>
-  <input type="button" style="width: 930px; height: 870px; font-size:70px; background-color: rgb(73, 167, 73) " value="Tıkla Bana" onclick="document.write('You Are HACKED')+show_image('https://112291-319675-1-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/06/website-hacked.png',800,430,'You are Hacked');"/>
+  <input type="button" style="width: 930px; height: 870px; font-size:70px; background-color: rgb(73, 167, 73) " value="Tıkla Bana" onclick="ses_cal('sound/buzz.mp3')+document.write('You Are HACKED')+show_image('https://112291-319675-1-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/06/website-hacked.png',800,430,'You are Hacked');"/>
   <input type="button" style="width: 930px; height: 870px; font-size: 70px; background-color: rgb(177, 95, 111)" value="Tıklama Bana" onclick="document.write('Hack Has Been Absorbed')+show_image('https://cdn0.iconfinder.com/data/icons/businessman-icons-set-cartoon-style/512/a1129-512.png',512,512,'You are not Hacked');"/>
-
+  
 </div>
 
 </body>
